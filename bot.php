@@ -19,6 +19,10 @@
 				$this->main();
 			}
 		}
+		function read(){ //DO NOT USE!
+			$stdin = fopen("php://stdin", 'r');
+			return(fgets($stdin));
+		}
 		function uptime(){
 			$time = time()-$this->starttime;
 			$hours = 0;
